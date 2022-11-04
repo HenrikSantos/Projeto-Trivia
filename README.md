@@ -1,4 +1,4 @@
-# PROJETO FrontEnd Online Store!
+# PROJETO Trivia!
 Um dos projetos desenvolvido na Trybe, é um jogo de perguntas e respostas baseado no jogo Trivia (tipo um show do milhão americano) utilizando React e Redux, foi desenvolvido em grupo conforme as demandas definidas em um quadro Kanban.
 
 ## Habilidades desevolvidas:
