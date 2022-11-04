@@ -31,7 +31,7 @@ Back-end:
 - No terminal use o npm start;
 
 ESTE PROJETO FOI REALIZADO POR:
-[Henrik Santos](https://www.linkedin.com/in/henrik-santos-dev/)
-[Gabryela Nagazawa](https://www.linkedin.com/in/gabryela-nagazawa-dev/)
-[Marcelo Vieira](https://www.linkedin.com/in/marcelovieir4/)
-[Victor Alejandro Cabral Orellana](https://www.linkedin.com/in/victor-alejandro-orellana/)
+- [Henrik Santos](https://www.linkedin.com/in/henrik-santos-dev/)
+- [Gabryela Nagazawa](https://www.linkedin.com/in/gabryela-nagazawa-dev/)
+- [Marcelo Vieira](https://www.linkedin.com/in/marcelovieir4/)
+- [Victor Alejandro Cabral Orellana](https://www.linkedin.com/in/victor-alejandro-orellana/)
