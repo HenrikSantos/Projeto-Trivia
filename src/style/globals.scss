@@ -1,0 +1,303 @@
+$base-blue: #a0aefd;
+$dark-blue: #44357A;
+$very-dark-blue: #20193B;
+$white: rgb(250, 245, 245);
+
+// gradient blue colors
+$blue-variations-1: #7665ba85;
+$blue-variations-2: #ffffff;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    max-width: 1388px;
+    margin: auto;
+    background-color: $very-dark-blue;
+}
+
+body, input, button {
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-family: sans-serif;
+}
+
+.trivia-text {
+    margin-top: 7rem;
+    font-size: 7rem;
+    text-align: center;
+    color: white;
+}
+
+.login-form {
+    border: 2px solid $dark-blue;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: 22rem;
+    max-height: 22rem;
+    padding: 2rem;
+    background-color: $very-dark-blue;
+    border-radius: .5rem;
+    filter: drop-shadow(1rem 1rem .5rem rgba(0, 0, 0, 0.4));
+    h1 {
+        text-align: center;
+        color: white;
+    }
+    h2 {
+        color: $white;
+        text-align: center;
+    }
+    input {
+        width: 100%;
+        padding: .7rem;
+        margin: 1rem 0;
+        border-radius: .2rem;
+        background-color: $dark-blue;
+        color: $white;
+    }
+    button {
+        width: 100%;
+        border-radius: .2rem;
+        display: flex;
+        justify-content: center;
+        padding: .7rem 2rem;
+        margin: 1rem auto;
+        background: none;
+        border: 2px solid $dark-blue;
+        color: white;
+        font-weight: 600;
+        transition: .2s;
+        &:hover {
+            background-color: $base-blue;
+            border: 2px solid $base-blue;
+        }
+    }
+}
+
+.header {
+    border: 2px solid $dark-blue;
+    padding: 2rem;
+    border-radius: .4rem;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    justify-content: flex-start;
+    color: $white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    img {
+        max-width: 3rem;
+        border-radius: 50%;
+    }
+    span {
+        margin: 0 3rem;
+        color: $white;
+        strong {
+            color: $base-blue;
+        }
+    };
+}
+
+.game-page {
+    padding: 3rem;
+    height: 100vh;
+    .game-container {
+        padding: 2rem;
+        color: $white;
+        font-size: 1rem;
+        p {
+            margin: 1rem 0;
+            color: $base-blue;
+        }
+        .question {
+            color: white;
+            font-size: 1.3rem;
+            margin: 4rem 0;
+        }
+        h2 {
+            font-size: 2rem;
+            color: $base-blue;
+            span {
+                color: $white;
+            }
+        }
+        .answer-options {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            button {
+                border: 2px solid $dark-blue;
+                border-radius: .2rem;
+                font-size: 1.1rem; 
+                color: white;
+                background: none;
+                width: 100%;
+                padding: .6rem;
+                margin-top: 1rem;
+                transition: .1s;
+                &:hover {
+                    background-color: $base-blue;
+                    border: 2px solid $base-blue;
+                }
+            }
+            .correct-answer {
+                background-color: rgb(69, 141, 87);
+                animation: feedbackanimation .6s infinite alternate;
+                border: 2px solid rgb(69, 141, 87);
+                color: $white;
+                filter: drop-shadow(0px 0px .3rem $white);
+            }
+            .incorrect-answer {
+                border: 2px solid rgb(150, 28, 28);
+            }
+        }
+        .next-button {
+            margin-top: 2rem;
+            padding: .7rem 4rem;
+            border: 2px solid $dark-blue;
+            background: none;
+            color: $white;
+            border-radius: .2rem;
+            font-size: 1rem;
+            transition: .2s;
+            &:hover {
+                background-color: $base-blue;
+                border: 2px solid $base-blue;
+            }
+        }
+    }
+
+}
+
+.feedback-page {
+    color: white;
+    padding: 2rem;
+    .two-column-feedback{
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 1.1rem;
+    }
+    div, h3 {
+        padding: 2rem;
+    }
+    button {
+        margin: 2rem;
+        padding: .7rem 2rem;
+        background: none;
+        border: 2px solid $dark-blue;
+        color: $white;
+        width: 10rem;
+        border-radius: .2rem;
+        transition: .1s;
+        &:hover {
+            background-color: $base-blue;
+            border: 2px solid $base-blue;
+        }
+    }
+    p {
+        color: $base-blue;
+        span {
+            color: $white;
+            font-weight: 600;
+        }
+    }
+    span {
+        color: $base-blue;
+        span {
+            color: $white;
+            font-weight: 600;
+        }
+    }
+    h3 {
+        color: $white;
+        font-size: 2rem;
+        text-align: center;
+        animation: feedbackanimation .6s infinite alternate;
+    }
+
+}
+
+.ranking-page {
+    color: $white;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    h2 {
+        text-align: center;
+        margin: 3rem 0;
+    }
+    button {
+        margin: 0 auto;
+        padding: .7rem 2rem;
+        background: none;
+        border: 2px solid $dark-blue;
+        color: $white;
+        width: 60%;
+        border-radius: .2rem;
+        transition: .1s;
+        &:hover {
+            background-color: $base-blue;
+            border: 2px solid $base-blue;
+        }
+    }
+    ul {
+        width: 60%;
+        margin: 1rem auto;
+        max-height: 40vh;
+        overflow-y: scroll; 
+        padding: 0 1rem;
+        &::-webkit-scrollbar {
+        background-color: $dark-blue;
+        border-radius: 16px;
+        margin: 1rem;
+        }
+        &::-webkit-scrollbar-thumb {
+        background-color: $very-dark-blue;
+        border: 2px solid $dark-blue;
+        border-radius: 5px;
+        } 
+        li {
+            display: flex;
+            justify-content: space-between;
+            grid-template-columns: 1fr 1fr 1fr;
+            align-items: center;
+            gap: 2rem;
+            margin: 1rem 0;
+            padding: 1rem 3rem;
+            border-radius: .2rem;
+            border: 2px solid $dark-blue;
+            img {
+                max-width: 4rem;
+                border-radius: 50%;
+            }
+            p {
+                font-size: 1rem;
+                span {
+                    color: $base-blue;
+                    font-weight: 600;
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
+}
+
+@keyframes feedbackanimation {
+    from {
+        filter: drop-shadow(0px 0px 0rem transparent);
+    }
+    to {
+        filter: drop-shadow(0px 0px .5rem $base-blue);
+    }
+}
